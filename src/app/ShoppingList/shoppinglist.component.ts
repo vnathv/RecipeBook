@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 
 @Component({
 selector: 'app-shoppinglist',
-templateUrl: 'shopinglist.component.html'
+templateUrl: 'shoppinglist.component.html'
 })
 
 export class ShoppinglistComponent {
