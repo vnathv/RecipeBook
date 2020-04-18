@@ -7,9 +7,14 @@ import { Ingredient } from '../shared/Ingredient.model';
 })
 
 export class ShoppingListComponent {
-  ingredients: Ingredient[] = [
-    new Ingredient("Tomato", 100),
-    new Ingredient("Chilly", 50)
-  ];
+  ingredients: Ingredient[] =[];
+
+  onAddedToShoppingList(ingredient:Ingredient){
+    this.ingredients.push(ingredient)
+  }
+
+  onDeletedFromShoppingList(){
+    this.ingredients.pop();
+  }
 
 }

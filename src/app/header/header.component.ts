@@ -1,5 +1,5 @@
 import {
-  Component
+  Component, Output, EventEmitter
 } from '@angular/core';
 
 @Component({
@@ -8,5 +8,11 @@ import {
 })
 
 export class HeaderComponent {
+
+  @Output() onSelectedLink = new EventEmitter<string>();
+
+  onClick(selectedLink: string) {
+    this.onSelectedLink.emit(selectedLink);
+  }
 
 }

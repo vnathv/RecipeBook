@@ -3,19 +3,19 @@
     <form>
       <div class="col-sm-5 form-group">
         <label for="name">Name</label>
-        <input type="text" is="name" class="form-control">
+        <input type="text" is="name" class="form-control" #inputName>
       </div>
 
 
       <div class="col-sm-2 form-group">
         <label for="amount">Amount</label>
-        <input type="number" id="amount" class="form-control">
+        <input type="number" id="amount" class="form-control" #inputAmount>
       </div>
 
       <div class="col-xs-12">
-        <button class="btn btn-success" type="submit">Add</button>
-        <button class="btn btn-danger" type="button">Delete</button>
-        <button class="btn btn-primary" type="button">Clear</button>
+        <button class="btn btn-success" type="button" (click) = "AddToShoppingList()">Add</button>
+        <button class="btn btn-danger" type="button" (click) = "DeleteFromShoppingList()">Delete</button>
+        <button class="btn btn-primary" type="button" (click) = "ClearShoppingList()">Clear</button>
       </div>
     </form>
   </div>
